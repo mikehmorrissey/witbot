@@ -1,4 +1,5 @@
 var _ = require('underscore')
+console.log('hello')
 var request = require('needle')
 var VERSION = '20150306'
 
