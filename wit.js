@@ -1,6 +1,5 @@
 var _ = require('underscore')
-console.log('hello')
-var request = require('needle')
+var needle = require('needle')
 var VERSION = '20150306'
 
 var getHeaders = function(access_token, others) {
@@ -23,7 +22,7 @@ var captureTextIntent = function (access_token, text, options, callback) {
     headers: getHeaders(access_token)
   }
 
-  needle.request('get', 'https://api.wit.ai/message', query_params, request_options, function(err, resp, body) {
+  needle.request('get', 'https://api.wit.ai/message', query_params, request_options, function(err, response, body) {
     if (response && response.statusCode !== 200) {
       err = "Invalid response received from server: " + response.statusCode
     }
