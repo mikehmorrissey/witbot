@@ -1,4 +1,4 @@
-var Wit = require('node-wit')
+var Wit = require('./wit')
 
 module.exports = function (witToken) {
   return new Witbot(witToken)

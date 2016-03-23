@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/BeepBoopHQ/witbot#readme",
   "dependencies": {
-    "node-wit": "^2.0.0"
+    "needle": "^1.0.0",
+    "underscore": "^1.8.3"
   }
 }
